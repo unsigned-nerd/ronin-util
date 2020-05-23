@@ -7,7 +7,7 @@ repo is here: [https://github.com/hundredrabbits/Ronin](https://github.com/hundr
 
 # Why do I use Ronin?
 
-My common image editing tasks are:
+My routine image editing tasks are:
 
   - drawing an arrow to mark a point on an image and send it to another
     person to tell him/her what I want them to look at
@@ -15,31 +15,30 @@ My common image editing tasks are:
     person to tell him/her what I want them to look at
   - cropping an image before sending it to other people
 
-I had been using ImageMagick for many years.  It's really not fun to
-use, especially when my tasks are really so trivial.
+I had been using ImageMagick for many years.  It's not fun to
+use, especially when my tasks are so trivial.
 
 Ronin is what I had been longing for.  Plain, simple and
 developer-friendly.
 
 # How to use my utility scripts?
 
-- Download Ronin from
-  [here](https://hundredrabbits.itch.io/ronin/purchase?popup=1), you
-  will see the ronin-main.zip file.
-- Extract ronin-map.zip, you will get index.html and README.txt file.
-- Open index.html file with your favourite web browser.
+- Download Ronin from [here](https://hundredrabbits.itch.io/ronin/purchase?popup=1) to get the ronin-main.zip file.
+- Extract ronin-map.zip, you get index.html and README.txt file.
+- Open index.html file with your favorite web browser.
 - As far as I know, we cannot open our image file from any commands or
   menus in Ronin.  We have to use Nautilus to browse the file and drag
   the image file from Nautilus to Ronin on the web browser.
-- After doing that, you will notice this message on the status bar (at
+- After doing that, please notice a message on the status bar (at
   the bottom of the page), "Loaded {your-image-filename.png}".
 - Now, at the code editor, you type
-  "(import "{your-image-filename.png}")" and press Ctrl+Enter.  You will
+  "(import "{your-image-filename.png}")" and press Ctrl+Enter.  You then
   see your image displayed on Ronin.
 - Download ronin-util to your computer through git clone
 - Assuming you want to use [util/draw-an-arrow-when-click.lisp](https://github.com/unsigned-nerd/ronin-util/blob/master/util/draw-an-arrow-when-click.lisp),
-  on Ronin's menu, click File > Open, then choose the file draw-an-arrow-when-click.lisp.
-- The code will be shown on the editor.
+  on Ronin's menu, click File > Open, then choose the file
+  draw-an-arrow-when-click.lisp.
+- The code is shown on the editor.
 - Press Ctrl+Enter to evaluate the code.
-- Now, whenever and whereever you use your mouse to click at any
-  location on the image, a red arrow will be drawn there.
+- Now, whenever and wherever you use your mouse to click at any location
+  on the image, a red arrow will be drawn there.
