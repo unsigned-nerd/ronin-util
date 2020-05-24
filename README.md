@@ -59,3 +59,15 @@ developer-friendly.
 - Press Ctrl+Enter to evaluate the code.
 - Now, whenever and wherever you use your mouse to click at any location
   on the image, a red arrow will be drawn there.
+
+# Ronin and Lisp
+
+We use a dialect of Lisp to code in Ronin.  There is no manual.  We can
+learn the syntaxes from the exmaples below:
+
+  - https://github.com/unsigned-nerd/ronin-util/tree/master/util
+  - https://github.com/unsigned-nerd/ronin-util/tree/master/example
+  - https://github.com/hundredrabbits/Ronin/tree/master/examples
+
+We can also see the list of functions and helpers from
+[here](https://github.com/hundredrabbits/Ronin/blob/master/README.txt).
