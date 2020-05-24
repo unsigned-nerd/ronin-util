@@ -27,13 +27,30 @@ developer-friendly.
 - Extract ronin-map.zip, you get index.html and README.txt file.
 - Open index.html file with your favorite web browser.
 - As far as I know, we cannot open our image file from any commands or
-  menus in Ronin.  We have to use Nautilus to browse the file and drag
-  the image file from Nautilus to Ronin on the web browser.
-- After doing that, please notice a message on the status bar (at
-  the bottom of the page), "Loaded {your-image-filename.png}".
-- Now, at the code editor, you type
-  "(import "{your-image-filename.png}")" and press Ctrl+Enter.  You then
-  see your image displayed on Ronin.
+  menus in Ronin.
+
+  There are two ways to add an image to Ronin
+
+  1. Drag image to Ronin first, then type `import` command.  Using this
+     way, you have to type the filename manually which is not a good
+     idea.
+
+    - Use Nautilus to browse the file and drag the image file from
+      Nautilus to Ronin on the web browser.
+    - After doing that, please notice a message on the status bar (at
+      the bottom of the page), "Loaded {your-image-filename.png}".
+    - Now, at the code editor, you type
+      `(import "{your-image-filename.png}")` and press Ctrl+Enter.  You
+      then see your image displayed on Ronin.
+
+  2. Type the `import` command first and use $path helper to fill out
+     the file name for you.
+
+     - At the code editor, you type `(import $path`, then you drag the
+       image from from name to Ronin.  The $path is replaced with your
+       image's filename and also loaded into Ronin session.
+     - Type `)`.
+
 - Download ronin-util to your computer through git clone
 - Assuming you want to use [util/draw-an-arrow-when-click.lisp](https://github.com/unsigned-nerd/ronin-util/blob/master/util/draw-an-arrow-when-click.lisp),
   on Ronin's menu, click File > Open, then choose the file
